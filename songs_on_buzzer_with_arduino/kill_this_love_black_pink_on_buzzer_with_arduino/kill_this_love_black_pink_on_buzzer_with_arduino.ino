@@ -1,38 +1,10 @@
-/* Play "He's A Pirate" / "Pirates of the Caribbean" Theme Song
- * By Xitang Zhao 2016.06.27
- * Youtube in Action: https://youtu.be/sjPAj1lXgtk
- * or TikTok in Action: https://www.tiktok.com/@tipstorylearn/video/6943019804261502213
- * 
- * INSTRUCTION: Hook up Pin 10 to the positive side of a buzzer or a microphone, hook up 
- * any resistor to the negative side of a buzzer (to limit current & volume & to protect the pin), 
- * and then connect the other end of the resistor to ground pin. Upload the sketch and enjoy! 
- * 
- * Don't have an Arduino right now? No worry. You can test it vitually on my TinkerCAD circuit:
- * https://www.tinkercad.com/things/f9QN4skaguI-play-pirates-of-the-caribbean-theme-song-on-buzzer
- * 
- * To learn the science of buzzer, Arduino tone library, and a step by step walkthrough of how I made this
- * Visit my learning note on TipStory: https://www.tipstory.org/learning/h2lUMccm5MeuSds
- * 
- * Last updated: 2021.03.25
- * ---------------------
- * Credits:
- * 
- * Music notes of the song obtained from Easy Music (Great website)
- * Link: http://easymusic.altervista.org/recorder-hes-a-pirate-pirates-of-caribbean-sheet-music-guitar-chords/
- * 
- * Musicnotes's "How to Read Sheet Music" Guide
- * Link: http://www.musicnotes.com/blog/2014/04/11/how-to-read-sheet-music/
- * 
- * Code inspired by Chapter 5 of Jeremy Blum's book "Exploring Arduino"
- * Link: http://www.exploringarduino.com/content/ch5/
- * 
- * Music notes' frequencies obtained from arduino website and Tone Library
- * Link: https://www.arduino.cc/en/Tutorial/toneMelody
- * Link: https://github.com/bhagman/Tone
- * 
- */
+//Code writen by vishal soni 
+//youtube :- http://youtube.com/vishalsoniindia
+// On 10 july 2021 
+// realy took 24 hour to write this
+//
 
-// Define pin 10 for buzzer, you can use any other digital pins (Pin 0-13)
+// Define pin A0 for buzzer, you can use any other digital pins (Pin 0-13)
 const int buzzer = A0;
 
 // Change to 0.5 for a slower version of the song, 1.25 for a faster version
@@ -141,27 +113,27 @@ int notes[] = {
 // Durations (in ms) of each music note of the song
 // Quarter Note is 250 ms when songSpeed = 1.0
 int durations[] = {
-    50,40,375,rest,125,rest,450,rest,
-    70,375,rest,125,rest,450,70,
-    375,rest,125,rest,175,rest,175,rest,
+    200,70,100,80,100,80,400,rest,
+    200,100,80,100,80,400,70,
+    200,rest,125,rest,175,rest,175,rest,
     175,rest,175,rest,175,rest,50,5,
 
-    30,40,375,rest,125,rest,450,rest,
-    70,375,rest,125,rest,450,70,
-    375,rest,125,rest,175,rest,175,rest,
+    200,70,100,80,100,80,400,rest,
+    200,100,80,100,80,450,70,
+    200,rest,125,rest,175,rest,175,rest,
     175,rest,175,rest,175,rest,175,5,
 
-    50,40,375,rest,125,rest,450,rest,
-    70,375,rest,125,rest,450,70,
-    375,rest,125,rest,175,rest,175,rest,
+    200,70,100,80,100,80,400,rest,
+    200,100,80,100,80,400,70,
+    200,rest,125,rest,175,rest,175,rest,
     175,rest,175,rest,175,rest,50,5,
 
-    30,40,375,rest,125,rest,450,rest,
-    70,375,rest,125,rest,450,70,
-    375,rest,125,rest,175,rest,175,rest,
+    200,70,100,80,100,80,400,rest,
+    200,100,80,100,80,450,70,
+    200,rest,125,rest,175,rest,175,rest,
     175,rest,175,rest,175,rest,175,
 
-    375,rest,125,rest,375,rest,125,50,
+    375,rest,150,rest,375,rest,125,50,
     450,rest,375,rest,125,rest,375,rest,125,rest,
     375,rest,125,rest,450,50,
 
